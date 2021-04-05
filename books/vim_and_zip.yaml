@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  remote_user: root
+  become: yes 
+
+  tasks:
+   - name: install vim
+     command: apt-get install vim
+   - name: install zip
+     command: apt-get install zip unzip
+     
